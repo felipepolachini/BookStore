@@ -1,0 +1,11 @@
+URI: 'http://fakerestapi.azurewebsites.net/api/books'
+CONTENT-TYPE: 'application/json'
+ACCEPT: 'application/json'
+TITLE: 'Livro Dom Casmurro'
+DESCRIPTION: 'dojo@cargox.com.br'
+PAGE-COUNT: '256'
+EXCERPT: 'Sumário resumido'
+PUBLISH-DATE: '2017-09-15T13:00:00.549505+00:00'
+DEFAULT: '-p pretty -p html'
+PRETTY: '-format pretty'
+HTML: --format html --out=reports/suiteondemand.html
