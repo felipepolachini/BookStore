@@ -70,8 +70,7 @@ class FakeRest
   
   def self.bookRead
     
-    #if (expect(@response.code).to eql '200')
-      if @response.code == 200
+    if (expect(@response.code).to eql '200')
       puts @response.code
       
       puts @lastBook
