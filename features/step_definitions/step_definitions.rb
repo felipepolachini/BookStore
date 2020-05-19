@@ -6,17 +6,10 @@ Given("Post book info") do
   FakeRest.postBook
 end
 
-Then("Book created") do
-  raise "Error at creating book" unless FakeRest.bookCreated == true
-end
-
 Given("Read book info") do
   FakeRest.readBook
 end
 
-Then("Book read") do
-  raise "Error at reading book" unless FakeRest.bookRead == true
-end
 
 Given("Change book info") do
   steps %Q{
@@ -25,6 +18,6 @@ Given("Change book info") do
   FakeRest.changeBookInfo
 end
 
-Then("Book changed") do
-  raise "Error at changing book" unless FakeRest.bookChanged == true
+Then("API Success") do
+  raise "API failed" unless expect(FakeRest.returnResponseCode).to eq 200
 end

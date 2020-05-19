@@ -1,0 +1,9 @@
+---
+
+default: '--p pretty -p html'
+json: '--p pretty -p json '
+
+pretty: --format pretty
+progress: --format progress
+html: --format html --out=reports/booksapi.html
+json: --format json --out reports/booksapi.json
